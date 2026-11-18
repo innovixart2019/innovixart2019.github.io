@@ -141,7 +141,7 @@ h1 { font-size: clamp(30px, 8.6vw, 76px); font-weight: 900; max-width: 15ch; mar
 .sello { position: absolute; top: -13px; left: 24px; font-family: "Syne"; font-weight: 800; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; background: var(--fuego); color: #1a0b00; padding: 5px 12px; border-radius: 999px; }
 .paquete h3 { font-size: 22px; }
 .precio { margin: 12px 0 10px; color: var(--suave); font-family: "Syne"; font-weight: 800; }
-.precio span { font-family: "Unbounded"; font-weight: 900; font-size: 34px; color: var(--texto); margin-left: 4px; }
+.precio span { font-family: "Unbounded"; font-weight: 900; font-size: clamp(20px, 5.6vw, 26px); color: var(--texto); margin-left: 4px; }
 .paquete-desc { color: var(--suave); font-size: 15px; margin-bottom: 18px; }
 .paquete ul { list-style: none; display: grid; gap: 10px; margin-bottom: 26px; flex: 1; }
 .paquete li { position: relative; padding-left: 26px; font-size: 15px; }
@@ -157,7 +157,7 @@ h1 { font-size: clamp(30px, 8.6vw, 76px); font-weight: 900; max-width: 15ch; mar
 .pieza:hover img { transform: scale(1.06); }
 .pieza.vacia img { display: none; }
 .pieza.vacia::before { content: "Tu diseño aquí"; position: absolute; inset: 0; display: grid; place-items: center; padding: 0 14px; text-align: center; font-family: "Syne"; font-weight: 800; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: rgba(255, 196, 107, .55); }
-.pieza figcaption { position: absolute; left: 8px; bottom: 8px; white-space: nowrap; font-family: "Syne"; font-weight: 800; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: rgba(3, 4, 8, .65); backdrop-filter: blur(6px); }
+.pieza figcaption { position: absolute; left: 8px; bottom: 8px; max-width: calc(100% - 16px); font-family: "Syne"; font-weight: 800; font-size: 10px; line-height: 1.3; letter-spacing: .04em; text-transform: uppercase; padding: 6px 10px; border-radius: 12px; background: rgba(3, 4, 8, .72); backdrop-filter: blur(6px); }
 
 /* Proceso */
 .pasos { list-style: none; display: grid; gap: 14px; counter-reset: p; }
